@@ -421,6 +421,7 @@ th {
 
 body {
   color: #048ca8;
+  text-align: center;
 }
 
 img {
@@ -473,40 +474,20 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.main-header {
-  position: absolute;
-  top: 1em;
-  left: 0;
-  right: 0;
+.col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
-.logo {
-  width: 25%;
-  min-width: 10rem;
-  max-width: 15rem;
-}
-
-.unstyled-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hero {
-  background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db93));
-  background: -webkit-linear-gradient(left, #048ca8, #16db93);
-  background: -o-linear-gradient(left, #048ca8, #16db93);
-  background: linear-gradient(to right, #048ca8, #16db93);
-  color: white;
-  padding-top: 8em;
-  padding-bottom: 8em;
-  text-align: center;
-}
-
-.hero .hero-img {
-  display: none;
+.col--full {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
 }
 
 .main-nav {
@@ -551,6 +532,61 @@ h2 {
 .main-nav a {
   color: white;
   text-decoration: none;
+}
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 1em;
+}
+
+.logo {
+  width: 25%;
+  min-width: 10rem;
+  max-width: 15rem;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero {
+  background: -webkit-gradient(linear, left top, right top, from(#048ca8), to(#16db93));
+  background: -webkit-linear-gradient(left, #048ca8, #16db93);
+  background: -o-linear-gradient(left, #048ca8, #16db93);
+  background: linear-gradient(to right, #048ca8, #16db93);
+  color: white;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.hero .hero-img {
+  display: none;
+}
+
+.sales-points {
+  padding: 10vh 0;
+}
+
+.sales-points .sales-point {
+  margin-bottom: 2.5em;
+}
+
+.sales-points .sales-point:first-of-type {
+  margin-top: 1.5em;
+}
+
+.sales-points .sales-point:last-child {
+  margin-bottom: 0;
+}
+
+.promo {
+  padding: 10vh 0;
 }
 
 .btn {
